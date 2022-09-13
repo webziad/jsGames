@@ -1,0 +1,160 @@
+@font-face {
+     font-family: Vazir;
+     src: url(assets/vazir-font-v27.2.2-Fontjo.com/Vazir-Bold.woff2)format('woff2'),
+          url(assets/vazir-font-v27.2.2-Fontjo.com/Vazir-Bold.woff) format('woff'),
+          url(assets/vazir-font-v27.2.2-Fontjo.com/Vazir-Thin.ttf) format('ttf'),
+          url(assets/vazir-font-v27.2.2-Fontjo.com/Vazir-Black.eot);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Vazir;
+}
+
+body {
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-image: url(pexels-pixabay-158827.jpg);
+     background-size: cover;
+     position: relative;
+}
+
+#game {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     min-height: 80vh;
+     padding: 0 50px;
+     overflow-y: scroll;
+     gap: 20px;
+     width: 100%;
+     overflow: hidden;
+}
+
+select {
+     width: 250px;
+     height: 50px;
+     border-radius: 5px;
+     box-shadow: 0 0 3px black;
+     background-color: lightslategray;
+     color: white;
+     padding: 10px 15px;
+
+}
+
+
+
+option {
+     background-color: rgb(39, 5, 5);
+     padding: 5px;
+     width: 20px;
+}
+
+se:focus {
+     min-width: 20px;
+     width: auto;
+}
+
+.btns {
+     position: fixed;
+     left: 5px;
+     bottom: 10px;
+     display: flex;
+     width: 100%;
+     align-items: center;
+     justify-content: space-around;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     flex-direction: row;
+}
+
+
+span {
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 50px;
+     text-align: center;
+     width: 50px;
+     color: white;
+     border-radius: 50%;
+     bottom: 50px;
+     box-shadow: 0 0 20px rgb(255, 225, 0);
+     cursor: pointer;
+
+}
+
+#my-chance {
+     background-color: darkgoldenrod;
+}
+
+#my-time {
+     background-color: rgb(243, 16, 129);
+}
+
+
+#true-answer {
+     background-color: rgb(243, 164, 16);
+}
+
+#won,
+#loose {
+     position: absolute;
+     border-radius: 10px;
+     display: none;
+}
+
+
+
+@media (max-width:576px) {
+
+     span {
+          width: 35px;
+          height: 35px;
+          font-size: 15px;
+     }
+
+
+     select {
+          width: 190px;
+          height: 50px;
+     }
+
+     option {
+          width: 100px;
+          height: 20px;
+     }
+
+     #won,
+     #loose {
+          width: 250px;
+          height: auto;
+     }
+
+
+}
+
+@media(max-width:878px) {
+     body {
+          background-image: url(sky.jpg);
+     }
+
+     .btns {
+          position: relative;
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-end;
+          flex-direction: row;
+          top: 0;
+          right: 0;
+     }
+
+
+}
