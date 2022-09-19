@@ -45,7 +45,7 @@ body {
 #box {
      width: 1200px;
      height: 200px;
-     animation: move 2s infinite;
+     animation: move 1s infinite;
      transform: translateX(-1200px);
      display: flex;
      align-items: center;
